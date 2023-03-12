@@ -1,12 +1,15 @@
 body {
   font-size: 1em;
+    padding: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 .bayan-wrapper {
   margin: 0 auto;
-  border: 1px solid black;
-  max-width: 1920px;
-  padding: 2vh;
+  padding: 0;
   background-color: navajowhite;
 }
 
