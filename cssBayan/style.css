@@ -23,12 +23,20 @@ body {
 }
 
 .input:checked~.content {
-  display: block;
   max-height: 100vh;
 }
 
-.input:checked~span {
+.input:checked~.label-text span {
   color: black;
+}
+
+.input:checked~.label-text .close {
+  background-image: url('./assets/minus.svg');
+}
+
+.label-text {
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
@@ -50,19 +58,15 @@ img {
   color: rgb(38, 0, 255);
   border-top: 1px solid black;
   display: block;
-  position: relative;
   padding: 1vh;
 }
 
 .close {
-  display: none;
+  opacity: 0;
   width: 1.5vw;
   height: 1.5vw;
   background-image: url('./assets/plus.svg');
   background-size: cover;
-  position: absolute;
-  top: 0.5vh;
-  right: 0.5vh;
 }
 
 .content {
@@ -82,26 +86,32 @@ img {
   body {
     font-size: 1.5em;
   }
+
   .bayan {
     max-width: 75vw;
   }
 }
+
 @media (min-width: 1920px) {
   body {
     font-size: 2em;
   }
+
   .bayan {
     max-width: 75vw;
   }
 }
+
 @media (max-width: 820px) {
   body {
     font-size: 1.25em;
   }
+
   .bayan {
     max-width: 90vw;
   }
 }
+
 @media (max-width: 320px) {
   body {
     font-size: 1em;
@@ -112,7 +122,7 @@ img {
 
   .bayan:hover .close,
   .bayan:hover span {
-    display: block;
+    opacity: 1;
     color: black;
     cursor: pointer;
   }
