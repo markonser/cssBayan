@@ -37,6 +37,7 @@ body {
 .label-text {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 img {
@@ -47,7 +48,7 @@ img {
 }
 
 .bayan-item {
-  margin-top: 1vh;
+  line-height: 7vh;
 }
 
 .bayan-item:active {
@@ -58,7 +59,7 @@ img {
   color: rgb(38, 0, 255);
   border-top: 1px solid black;
   display: block;
-  padding: 1vh;
+
 }
 
 .close {
